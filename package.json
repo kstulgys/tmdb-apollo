@@ -1,0 +1,25 @@
+{
+	"name": "tmdb-apollo",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "babel server/src --out-dir server/dist",
+		"gitwip": "git add . && git commit -m 'wip' && git push",
+		"gitd": "git subtree push --prefix server heroku-server master",
+		"deploy": "yarn gitwip && yarn build && yarn gitd"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kstulgys/tmdb-apollo.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kstulgys/tmdb-apollo/issues"
+	},
+	"homepage": "https://github.com/kstulgys/tmdb-apollo#readme",
+	"dependencies": {
+		"bcrypt-nodejs": "^0.0.3"
+	}
+}

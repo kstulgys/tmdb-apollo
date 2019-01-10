@@ -1,0 +1,7 @@
+/node_modules
+npm-debug.log
+.DS_Store
+*.env
+testconfig.js
+__test__
+yarn-error.log
